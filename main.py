@@ -22,6 +22,7 @@ def colorize_markdown(text):
 process = subprocess.Popen(command, stdout=subprocess.PIPE, bufsize=1, universal_newlines=True)
 
 # Loop over the lines from the subprocess's stdout
+print()
 for line in process.stdout:
     line = line.strip()
     print(colorize_markdown(line))
