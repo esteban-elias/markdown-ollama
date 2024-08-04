@@ -13,6 +13,8 @@ def colorize_markdown(text):
         r'\*\*(.*?)\*\*': '\033[1m' + r'\1' + '\033[0m',  # Bold
         r'\*(.*?)\*': '\033[3m' + r'\1' + '\033[0m',  # Italic
         r'`(.*?)`': '\033[4m' + r'\1' + '\033[0m',  # Inline code
+        r'```(.*?)```': '\033[4m' + r'\1' + '\033[0m',  # Block code
+
     }
     for pattern, color_code in patterns.items():
         text = re.sub(pattern, color_code, text)
