@@ -1,4 +1,4 @@
-## Simple script that highlights each paragraph Ollama puts into terminal
+## Simple script that highlights each line Ollama puts into terminal
 
 ```
 git clone https://github.com/esteban-elias/markdown-ollama.git
