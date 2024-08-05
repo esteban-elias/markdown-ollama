@@ -2,6 +2,7 @@ import subprocess
 import sys
 from rich.console import Console
 from rich.markdown import Markdown
+from rich.prompt import Prompt
 
 
 def append_human_message(message: str, history: str):
@@ -45,7 +46,7 @@ while True:
 
         history = append_ai_message(stdout, history=history)
 
-        prompt = input('\n>>> ')
+        prompt = Prompt.ask("[bold green]\n>>>[/bold green]")
         history = append_human_message(prompt, history=history)
 
     except KeyboardInterrupt or EOFError:
