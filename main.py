@@ -14,9 +14,10 @@ def append_ai_message(message: str, history: str):
 
 
 history = '''
-Guidelines of this conversation:
+Guidelines for this conversation:
+- Provide short, precise and concise answers.
 - If you do not find information, please be
-honest and do not invent information and do not hallucinate.
+honest and do not hallucinate information.
 - You are "AI" an I am "HUMAN".
 Now, let's start the conversation.
 '''
